@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class EOneDimensionalArrays {
     public static void main(String[] args) {
-        // массивы данных
+        // массивы данных (одномерные)
         int[] nums = new int[5];
         nums[0] = 45;
         nums[1] = 32;
