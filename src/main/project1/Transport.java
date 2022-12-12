@@ -8,9 +8,23 @@ public class Transport {
     public String color;
     public byte[] coordiante;
 
-    public void setValues(float _speed, int _weight, String _color, byte[] _coordiante) {
-        speed = _speed;
+    // конструктор для класса
+    public Transport(float _speed, int _weight, String _color, byte[] _coordiante) {
+        System.out.println("Object created");
+        setValues(_speed,_weight, _color, _coordiante);
+        System.out.println(getValues());
+    }
+
+    public Transport(int _weight, byte[] _coordiante) {
         weight = _weight;
+        coordiante = _coordiante;
+        System.out.println(getValues());
+    }
+
+
+    public void setValues(float _speed, int weight, String _color, byte[] _coordiante) {
+        speed = _speed;
+        this.weight = weight;
         color = _color;
         coordiante = _coordiante;
 
@@ -25,3 +39,4 @@ public class Transport {
         return info + infoCoordiantes;
     }
 }
+
