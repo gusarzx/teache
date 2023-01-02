@@ -8,10 +8,11 @@ public class Transport {
     public String color;
     public byte[] coordiante;
 
+
     // конструктор для класса
     public Transport(float _speed, int _weight, String _color, byte[] _coordiante) {
         System.out.println("Object created");
-        setValues(_speed,_weight, _color, _coordiante);
+        setValues(_speed, _weight, _color, _coordiante);
         System.out.println(getValues());
     }
 
